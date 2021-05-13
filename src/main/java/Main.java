@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String url = in.nextLine();
-        String pathToHTML = "/C:/Simbirsoft/Download.html";
-        String pathToText = "C:/Simbirsoft/Text.txt";
+        String pathToHTML = "./Download.html";
+        String pathToText = "./Text.txt";
         DownloadingPage page = new DownloadingPage();
         page.download(url, pathToHTML);
         ConvertingPage convertingPage = new ConvertingPage();
